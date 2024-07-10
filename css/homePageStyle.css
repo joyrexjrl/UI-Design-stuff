@@ -1,0 +1,35 @@
+/* hero section start */
+
+.hero{
+    width: 60%;
+    border: 1px solid white;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.hero-image-mural{
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: var(--site-wide-gap);
+}
+
+.hero-image-card img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+@media (min-width: 40em){
+    .hero-image-card.large-image{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+}
+
+.hero-search-bar-container{
+    margin-top: 3rem;
+}
+
+/* hero section end */
