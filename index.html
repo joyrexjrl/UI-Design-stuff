@@ -17,7 +17,7 @@
             <div>
                 <nav class="flex">
                     <div>
-                        <a href="http://">About</a>
+                        <a href="about.html">About</a>
                     </div>
                     <div class="dropdown">
                         <p class="nav-pets color-white">Pets</p>
@@ -26,11 +26,12 @@
                             <a href="dogs.html">Dogs</a>
                             <a href="birds.html">Birds</a>
                             <a href="fish.html">Fish</a>
+                            <a href="smallpets.html">Small</a>
                             <a href="reptiles.html">Reptiles</a>
                         </div>
                     </div>
                     <div>
-                        <a href="http://">Contact</a>
+                        <a href="#homepage-contact">Contact</a>
                     </div>
                 </nav>
             </div>            
@@ -40,58 +41,128 @@
     <section class="hero flex col">
         <h1>Paradigm Pet Professionals</h1>
         <div class="hero-image-mural grid">
-            <div class="hero-image-card large-image grid-one">
+            <div class="hero-image-card large-image">
                 <img src="images/cat/cat2.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card grid-two">
+            <div class="hero-image-card">
                 <img src="images/bird/bird4.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card grid-three">
-                <img src="images/dog/dog2.webp" alt="hero image card">
+            <div class="hero-image-card">
+                <img src="images/reptile/rep1.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card grid-four">
+            <div class="hero-image-card">
                 <img src="images/fish/fish2.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card grid-five">
+            <div class="hero-image-card">
                 <img src="images/cat/cat4.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card grid-six">
+            <div class="hero-image-card">
                 <img src="images/bird/bird1.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card grid-seven">
+            <div class="hero-image-card">
                 <img src="images/dog/dog1.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card grid-eight">
-                <img src="images/fish/fish4.webp" alt="hero image card">
+            <div class="hero-image-card">
+                <img src="images/small/small3.webp" alt="hero image card">
             </div>
-            <div class="hero-image-card large-image grid-nine">
+            <div class="hero-image-card">
                 <img src="images/cat/cat3.webp" alt="hero image card">
             </div>
         </div>
-        <div class="hero-search-bar-container">
+        <div class="hero-search-bar-container flex">
             <input class="hero-search-bar" type="search" name="search" placeholder="Search">
             <button class="hero-search-button">Go</button>
         </div>
     </section>
-    <section class="home-page-mid-section">
-
+    <section class="home-page-mid-section grid">
+        <div class="home-page-mid-card flex col">
+            <a href="cats.html"><img class="card-image" src="images/cat/cat1.webp" alt="cat card image"></a>
+            <h2>Cats</h2>
+        </div>
+        <div class="home-page-mid-card flex col">
+            <a href="birds.html"><img class="card-image" src="images/bird/bird2.webp" alt="bird card image"></a>
+            <h2>Birds</h2>
+        </div>
+        <div class="home-page-mid-card flex col">
+            <a href="dogs.html"><img class="card-image" src="images/dog/dog3.webp" alt="dog card image"></a>
+            <h2>Dogs</h2>
+        </div>
+        <div class="home-page-mid-card flex col">
+            <a href="fish.html"><img class="card-image" src="images/fish/fish1.webp" alt="fish card image"></a>
+            <h2>Fish</h2>
+        </div>
+        <div class="home-page-mid-card flex col">
+            <a href="smallpets.html"><img class="card-image" src="images/small/small2.webp" alt="small card image"></a>
+            <h2>Small Pets</h2>
+        </div>
+        <div class="home-page-mid-card flex col">
+            <a href="reptiles.html"><img class="card-image" src="images/reptile/rep3.webp" alt="small card image"></a>
+            <h2>Reptiles</h2>
+        </div>
     </section>
-    <section class="contact-section">
-
+    <section id="homepage-contact" class="contact-section">
+        <div class="contact-container flex">
+            <form action="" class="contact-form flex col">
+                <div class="form-info flex">
+                    <label for="firstName">First Name:</label>
+                    <input id="formFirstName" type="text" name="firstName" placeholder="John" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="lastName">Last Name:</label>
+                    <input id="formLastName" type="text" name="lastName" placeholder="Doe" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input id="formPhoneNumber" type="text" name="phoneNumber" placeholder="123-456-7890">
+                </div>
+                <div class="form-info flex">
+                    <label for="email">Email:</label>
+                    <input id="formEmail" type="email" name="email" placeholder="johndoe@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="petsName">Pets Name:</label>
+                    <input id="formPetsName" type="text" name="petsName" placeholder="Pets name">
+                </div>
+                <div class="form-info flex">
+                    <label for="petType">Pet Type:</label>
+                    <select name="petType" id="">
+                        <option value="petType"></option>
+                        <option value="cat">Cat</option>
+                        <option value="dog">Dog</option>
+                        <option value="bird">Bird</option>
+                        <option value="fish">Fish</option>
+                        <option value="reptile">Reptile</option>
+                        <option value="small">Small Pet</option>
+                    </select>
+                </div>
+                <div class="form-info flex">
+                    <label for="petAge">Pets Age:</label>
+                    <input id="formPetsAge" type="text" name="petAge" placeholder="Pets Age">
+                </div>
+                <div class="form-info flex">
+                    <label for="message">Message:</label>
+                    <textarea id="formMessage" name="message" placeholder="Message"></textarea>
+                </div>
+                <div class="form-button-container">
+                    <button class="form-button" type="button">Send</button>
+                </div>
+            </form>
+        </div>
     </section>
     <footer>
         <div class="nav-container flex">            
             <div class="footer-menues flex">
                 <a href="#"><img id="site-logo" class="logo" src="images/petshoplogo.png" alt="logo image" width="75" height="75"></a>
                 <div>
-                    <a href="">About</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div class="flex col">
                     <a href="cats.html">Cats</a>
-                    <a href="dogs.html">Dogs</a>
-                    <a href="birds.html">Birds</a>
-                    <a href="fish.html">Fish</a>
-                    <a href="reptiles.html">Reptiles</a>
+                        <a href="dogs.html">Dogs</a>
+                        <a href="birds.html">Birds</a>
+                        <a href="fish.html">Fish</a>
+                        <a href="smallpets.html">Small</a>
+                        <a href="reptiles.html">Reptiles</a>
                 </div>
                 <div>
                     <p class="color-white">Copywrite info</p>

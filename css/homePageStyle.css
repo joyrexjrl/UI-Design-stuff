@@ -2,7 +2,6 @@
 
 .hero{
     width: 60%;
-    border: 1px solid white;
     margin-inline: auto;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +9,7 @@
 }
 
 .hero-image-mural{
-    width: 100%;
+    max-width: 75%;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: var(--site-wide-gap);
 }
@@ -32,4 +31,86 @@
     margin-top: 3rem;
 }
 
+.hero-search-bar,
+.hero-search-button{
+    height: 45px;
+    box-shadow: none;
+    background-color: var(--secondary-color-gray);
+    color: white;
+    border: none;
+}
+
+.hero-search-bar{
+    margin-inline: auto;
+    width: 300px;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.hero-search-button{
+    width: 45px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
 /* hero section end */
+/* card section start */
+
+.home-page-mid-section{
+    width: 60%;
+    margin-inline: auto;
+    padding: 3rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: var(--site-wide-gap);
+}
+
+.home-page-mid-card{
+    gap: 1rem;
+    align-items: center;
+}
+
+.card-image{    
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+}
+
+/* card section end */
+/* contact section start */
+
+.contact-container{
+    width: 60%;
+    margin-inline: auto;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.contact-form{
+    gap: .5rem;
+}
+
+.form-info{
+    align-items: center;
+}
+
+.form-info label{
+    width: 15ch;
+}
+
+.form-info input,
+.form-info select,
+.form-info textarea{
+    width: 45ch;
+}
+
+.form-button-container{
+    margin-inline: auto;
+    padding-top: 1rem;
+}
+
+.form-button{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* contact section end */
