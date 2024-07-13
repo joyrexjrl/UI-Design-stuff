@@ -29,6 +29,7 @@
 
 .hero-search-bar-container{
     margin-top: 3rem;
+    width: 60%;
 }
 
 .hero-search-bar,
@@ -42,7 +43,8 @@
 
 .hero-search-bar{
     margin-inline: auto;
-    width: 300px;
+    width: 100%;
+    min-width: 150px;
     padding-left: 10px;
     border-radius: 5px 0 0 5px;
 }
