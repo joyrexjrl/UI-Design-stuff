@@ -73,6 +73,16 @@
     width: 100%;
     aspect-ratio: 1 / 1.25;
     object-fit: cover;
+    transition: all .2s ease-in-out;
+}
+
+.card-image:hover{
+    box-shadow: var(--site-box-shadow);
+}
+
+.list-container{
+    width: 72ch;
+    margin-inline: auto;
 }
 
 /* card section end */
@@ -82,7 +92,7 @@
     width: 60%;
     margin-inline: auto;
     justify-content: center;
-    padding: 3rem 0;
+    padding-bottom: 3rem;
 }
 
 .contact-form{
@@ -101,6 +111,7 @@
 .form-info select,
 .form-info textarea{
     width: 45ch;
+    padding: 5px 0 5px 10px;
 }
 
 .form-button-container{

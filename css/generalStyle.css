@@ -56,6 +56,10 @@ a:hover{
     color: white;
 }
 
+.centered{
+    margin-inline: auto;
+}
+
 /* nav style start */
 
 header,
