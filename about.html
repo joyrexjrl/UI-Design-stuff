@@ -6,7 +6,8 @@
     <title>About</title>
     <link rel="stylesheet" href="css/resets.css">
     <link rel="stylesheet" href="css/generalStyle.css">
-    <link rel="stylesheet" href="css/petPageStyle.css">
+    <link rel="stylesheet" href="css/homePageStyle.css">
+    <link rel="stylesheet" href="css/aboutStyle.css">
 </head>
 <body class="flex col" onload="document.body.style.opacity='1'">
     <header>
@@ -39,8 +40,62 @@
         
     </header>
 
-    <section class="pets-page-mid-section">
+    <section class="about-section">
+        <h1 class="h1-adjuster">About</h1>
 
+        <p class="centered">Paradigm Pet Professionals has 12 years’ experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support </p><br>
+        <p class="centered">virtual consultations and presentations, one-on-one consultations concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group)</p>
+    </section>
+
+    <section class="contact-section">
+        <p class="centered">Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.</p><br>
+        <div class="contact-container flex">
+            <form action="" class="contact-form flex col">
+                <div class="form-info flex">
+                    <label for="firstName">First Name:</label>
+                    <input id="formFirstName" type="text" name="firstName" placeholder="John" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="lastName">Last Name:</label>
+                    <input id="formLastName" type="text" name="lastName" placeholder="Doe" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input id="formPhoneNumber" type="text" name="phoneNumber" placeholder="123-456-7890" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="email">Email:</label>
+                    <input id="formEmail" type="email" name="email" placeholder="johndoe@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="petsName">Pets Name:</label>
+                    <input id="formPetsName" type="text" name="petsName" placeholder="Pets name" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="petType">Pet Type:</label>
+                    <select name="petType" id="" required>
+                        <option value="petType"></option>
+                        <option value="cat">Cat</option>
+                        <option value="dog">Dog</option>
+                        <option value="bird">Bird</option>
+                        <option value="fish">Fish</option>
+                        <option value="reptile">Reptile</option>
+                        <option value="small">Small Pet</option>
+                    </select>
+                </div>
+                <div class="form-info flex">
+                    <label for="petAge">Pets Age:</label>
+                    <input id="formPetsAge" type="text" name="petAge" placeholder="Pets Age" required>
+                </div>
+                <div class="form-info flex">
+                    <label for="message">Message:</label>
+                    <textarea id="formMessage" name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="form-button-container">
+                    <button class="form-button" type="button">Send</button>
+                </div>
+            </form>
+        </div>
     </section>
 
     <footer>
