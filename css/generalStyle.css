@@ -5,6 +5,9 @@
     --secondary-color-silver: #bdbdbd;
     --site-box-shadow: 0px 8px 16px 0px var(--primary-color-midnight);
     --site-wide-gap: .5rem;
+
+    --fullHD-container-size: 80%;
+    --ultraHD-container-size: 60%;
 }
 
 body{
@@ -14,12 +17,11 @@ body{
 }
 
 h1{
-    font-size: 4rem;
     margin-bottom: 3rem;
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 2.5rem;    
 }
 
 a{
@@ -60,6 +62,17 @@ a:hover{
     margin-inline: auto;
 }
 
+.h1-adjuster{
+    font-size: clamp(3rem, 8vw + 1rem, 8rem);
+    text-align: center;
+    line-height: 1;
+}
+
+.slogan{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 /* nav style start */
 
 header,
@@ -69,7 +82,7 @@ header,
 
 .nav-container{
     margin-inline: auto;
-    width: 60%;
+    width: var(--fullHD-container-size);
     padding: .5rem 0;
     justify-content: space-between;
 }
@@ -124,3 +137,9 @@ footer{
 }
 
 /* footer style end */
+
+@media(min-width: 1100px){
+    .nav-container{
+        width: var(--ultraHD-container-size);
+    }
+}

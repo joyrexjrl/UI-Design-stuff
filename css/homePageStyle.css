@@ -1,7 +1,7 @@
 /* hero section start */
 
 .hero{
-    width: 60%;
+    width: var(--fullHD-container-size);
     margin-inline: auto;
     justify-content: space-between;
     align-items: center;
@@ -9,8 +9,8 @@
 }
 
 .hero-image-mural{
-    max-width: 75%;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    max-width: var(--fullHD-container-size);
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
     gap: var(--site-wide-gap);
 }
 
@@ -59,10 +59,10 @@
 /* card section start */
 
 .home-page-mid-section{
-    width: 60%;
+    width: var(--fullHD-container-size);
     margin-inline: auto;
     padding: 3rem 0;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     gap: var(--site-wide-gap);
 }
 
@@ -127,3 +127,19 @@
 }
 
 /* contact section end */
+
+@media(min-width: 1100px){
+    .hero,
+    .hero-image-mural,
+    .home-page-mid-section{
+        width: var(--ultraHD-container-size);
+    }
+
+    .hero-image-mural{
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+
+    .home-page-mid-section{
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
