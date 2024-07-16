@@ -4,12 +4,20 @@
     width: var(--fullHD-container-size);
 }
 
-.animal-group-header-image{
-    margin: 0 auto 3rem;
+.header-two-top-spacing{
+    margin-top: 3rem;
+}
+
+.animal-group-header-image,
+.animal-mid-section-image{    
     width: 70%;
     aspect-ratio: 2 / 1.5;
     object-fit: cover;
     box-shadow: var(--site-box-shadow);
+}
+
+.animal-group-header-image{
+    margin: 0 auto 3rem;
 }
 
 .animal-image-mid-section,
@@ -20,12 +28,6 @@
 .animal-image-mid-section{
     gap: 2rem;
     padding: 3rem 0;
-}
-
-.animal-mid-section-image{
-    width: 70%;
-    aspect-ratio: 2 / 1.5;
-    object-fit: cover;
 }
 
 @media(max-width: 800px){
