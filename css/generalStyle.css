@@ -33,6 +33,11 @@ a:hover{
     color: var(--secondary-color-gray);
 }
 
+ul, ol {
+    list-style-position: inside;
+    text-indent: 0.5ch;
+}
+
 .grid{
     display: grid;
 }
@@ -71,6 +76,10 @@ a:hover{
 .slogan{
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /* nav style start */

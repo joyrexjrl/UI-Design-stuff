@@ -55,13 +55,13 @@ a:not([class]) {
 
 picture,
 svg,
-video {
+video,
+img {
   max-width: 100%;
   display: block;
 }
 
 img {
-  max-width: 100%;
   height: auto;
   vertical-align: middle;
   font-style: italic;
