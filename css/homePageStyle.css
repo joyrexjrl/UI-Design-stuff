@@ -101,10 +101,12 @@
     margin-inline: auto;
     justify-content: center;
     padding-bottom: 3rem;
+    padding-top: 1.5rem;
 }
 
 .contact-form{
     gap: .5rem;
+    width: 100%;
 }
 
 .form-info{
@@ -118,7 +120,7 @@
 .form-info input,
 .form-info select,
 .form-info textarea{
-    width: clamp(150px, 50%, 350px);
+    width: 85%;
     padding: 5px 0 5px 10px;
 }
 
