@@ -30,7 +30,7 @@ a{
 }
 
 a:hover{
-    color: var(--secondary-color-gray);
+    color: var(--secondary-color-silver);
 }
 
 ul, ol {
