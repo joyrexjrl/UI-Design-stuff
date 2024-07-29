@@ -113,6 +113,10 @@
     width: 100%;
 }
 
+.contact-form input:invalid {
+    outline: 1px solid red;
+}
+
 .form-info{
     align-items: center;
 }
@@ -131,6 +135,23 @@
 .form-button-container{
     margin-inline: auto;
     padding-top: 1rem;
+    position: relative;
+}
+
+.form-message-sent-text{
+    position: absolute;
+    font-size: 11.5px;
+    max-width: 100%;
+    padding-top: .5rem;
+    transition: all .2s ease-in-out;
+}
+
+.hide-sent-text{
+    opacity: 0;
+}
+
+.show-sent-text{
+    opacity: 1;
 }
 
 .form-button{
