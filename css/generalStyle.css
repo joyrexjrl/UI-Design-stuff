@@ -109,8 +109,8 @@ nav{
 
 .nav-button-container{
     width: 100%;
-    gap: 0;
-    justify-content: space-between;
+    gap: .5rem;
+    justify-content: center;
 }
 
 .nav-button{
@@ -126,12 +126,13 @@ nav{
 .nav-button:hover,
 .nav-current-page {
     box-shadow: var(--site-box-shadow);
-    color: var(--secondary-color-gray);
+    color: var(--secondary-color-silver);
+    background-color: var(--primary-color-midnight);    
 }
 
 .nav-pets:hover,
 .nav-container a:hover{
-    color: var(--secondary-color-gray);
+    color: var(--secondary-color-silver);
 }
 
 .dropdown:hover .nav-pets-dropdown{
